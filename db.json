@@ -15,7 +15,7 @@
       "id": "1",
       "infoCadastro": {
         "nome": "Pizzaria Bella",
-        "imagemUrl": "assets/img/restaurantes/pizzaria-bella.jpg",
+        "imagemUrl": "/assets/img/restaurantes/pizzaria-bella.jpg",
         "endereco": "Rua A, 200, Contagem, MG",
         "telefone": "31912345678",
         "capacidade": 50,
@@ -333,7 +333,7 @@
       "id": "2",
       "infoCadastro": {
         "nome": "Sabor Mineiro",
-        "imagemUrl": "assets/img/restaurantes/sabor-mineiro.jpg",
+        "imagemUrl": "/assets/img/restaurantes/sabor-mineiro.jpg",
         "endereco": "Rua A, 100, Contagem, MG",
         "telefone": "(31) 98765-4321",
         "capacidade": 40,
@@ -896,7 +896,7 @@
       "id": "4",
       "infoCadastro": {
         "nome": "Estação do Hambúrguer",
-        "imagemUrl": "assets/img/restaurantes/estacao-do-hamburguer.jpg",
+        "imagemUrl": "/assets/img/restaurantes/estacao-do-hamburguer.jpg",
         "endereco": "Rua do Rock, 123, Contagem, MG",
         "telefone": "31955554444",
         "capacidade": 35,
