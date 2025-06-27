@@ -1,18 +1,18 @@
-// server.js - VERSÃO CORRIGIDA PARA READ-ONLY
-
 const jsonServer = require("json-server");
+const cors = require("cors"); // 1. IMPORTE O PACOTE CORS
 const server = jsonServer.create();
 
-// ****** CORREÇÃO AQUI ******
-// Carregamos o db.json como um objeto JavaScript em vez de um nome de arquivo
 const dbData = require("./db.json");
-const router = jsonServer.router(dbData); // O router agora usa o objeto em memória
+const router = jsonServer.router(dbData);
+
+// 2. USE O MIDDLEWARE DE CORS ANTES DE TODAS AS ROTAS
+server.use(cors()); 
 
 server.use(jsonServer.bodyParser);
 
+// Sua rota de login continua aqui
 server.post('/api/login', (req, res) => {
     const { email, password, isRestaurante } = req.body;
-    // O router.db agora acessa o banco de dados em memória
     const db = router.db.getState();
     let account = null;
 
