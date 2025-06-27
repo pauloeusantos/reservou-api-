@@ -8,6 +8,9 @@
   ],
   "routes": [
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(usuarios|restaurantes|reservas|feedbacks|api/login)(.*)",
       "dest": "server.js"
     },
