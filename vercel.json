@@ -3,20 +3,16 @@
   "builds": [
     {
       "src": "server.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["db.json"]
+      }
     }
   ],
   "routes": [
     {
-      "handle": "filesystem"
-    },
-    {
       "src": "/(usuarios|restaurantes|reservas|feedbacks|api/login)(.*)",
       "dest": "server.js"
-    },
-    {
-      "src": "/",
-      "dest": "/public/home.html"
     },
     {
       "src": "/(.*)",
